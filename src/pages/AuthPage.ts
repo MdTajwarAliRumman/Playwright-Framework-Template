@@ -37,18 +37,20 @@ export class AuthPage {
     readonly continueButton: Locator;
     readonly loggedInUser: Locator;
     readonly userDeleteBtn: Locator;
+    readonly logoutButton: Locator;
 
     constructor(page: Page) {
         this.page = page
 
         // Elements
-        this.NameTextBox = page.locator("//input[@placeholder='Name']")
-        this.SignupEmailTextBox = page.locator("//input[@data-qa='signup-email']")
-        this.SignupButton = page.locator("//button[normalize-space()='Signup']")
-
         this.LoginEmailTextBox = page.locator("//input[@data-qa='login-email']")
         this.LoginPasswordTextBox = page.locator("//input[@placeholder='Password']")
         this.LoginButton = page.locator("//button[normalize-space()='Login']")
+
+
+        this.NameTextBox = page.locator("//input[@placeholder='Name']")
+        this.SignupEmailTextBox = page.locator("//input[@data-qa='signup-email']")
+        this.SignupButton = page.locator("//button[normalize-space()='Signup']")
 
         this.AccountInfoTitle = page.getByText('ENTER ACCOUNT INFORMATION')
 
@@ -73,6 +75,8 @@ export class AuthPage {
         this.continueButton = page.locator("//a[normalize-space()='Continue']")
         this.loggedInUser = page.locator("//header[@id='header']//li[1]//a[1]")
         this.userDeleteBtn = page.locator("//a[normalize-space()='Delete Account']")
+
+        this.logoutButton = page.locator("//a[normalize-space()='Logout']")
     }
 
     // Methods
@@ -106,6 +110,12 @@ export class AuthPage {
         await this.zipCode.fill(zipCode);
         await this.mobileNumber.fill(mobileNumber);
         await this.createAccountButton.click();
+    }
+
+    async Login(email: string, password: string) {
+        await this.LoginEmailTextBox.fill(email);
+        await this.LoginPasswordTextBox.fill(password);
+        await this.LoginButton.click();
     }
 
 }
