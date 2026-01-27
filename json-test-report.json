@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 5
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 5
         },
         "id": "chromium",
         "name": "chromium",
@@ -55,7 +55,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "3way",
     "version": "1.58.0",
-    "workers": 4,
+    "workers": 10,
     "webServer": null
   },
   "suites": [
@@ -73,46 +73,6 @@
           "column": 6,
           "specs": [
             {
-              "title": "Verify that home page is visible successfully",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6759,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-25T11:13:08.223Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-01-3de25-age-is-visible-successfully-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d67a62e1068c03466ffa-00bd1c07d01ce55d8034",
-              "file": "01_LoginRegister_Module/01_SignUp_test.spec.ts",
-              "line": 20,
-              "column": 9
-            },
-            {
               "title": "Verify \"New User Signup!\" is visible",
               "ok": true,
               "tags": [],
@@ -125,15 +85,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6996,
+                      "duration": 11922,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-25T11:13:08.226Z",
+                      "startTime": "2026-01-27T10:12:51.621Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -149,7 +109,7 @@
               ],
               "id": "d67a62e1068c03466ffa-30e372b3178435ac5b13",
               "file": "01_LoginRegister_Module/01_SignUp_test.spec.ts",
-              "line": 24,
+              "line": 25,
               "column": 9
             },
             {
@@ -165,15 +125,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 14,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 7644,
+                      "duration": 14110,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-25T11:13:08.226Z",
+                      "startTime": "2026-01-27T10:12:51.594Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -191,6 +151,126 @@
               "file": "01_LoginRegister_Module/01_SignUp_test.spec.ts",
               "line": 29,
               "column": 9
+            },
+            {
+              "title": " Verify that 'ACCOUNT CREATED!' is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 20899,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T10:12:51.604Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-01-c657c--ACCOUNT-CREATED-is-visible-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d67a62e1068c03466ffa-8611d0347dbfda383c9d",
+              "file": "01_LoginRegister_Module/01_SignUp_test.spec.ts",
+              "line": 34,
+              "column": 9
+            },
+            {
+              "title": " Verify that 'logged in user' is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 20110,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T10:12:51.640Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-01-01681-t-logged-in-user-is-visible-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d67a62e1068c03466ffa-8de21426c6921eab1527",
+              "file": "01_LoginRegister_Module/01_SignUp_test.spec.ts",
+              "line": 41,
+              "column": 9
+            },
+            {
+              "title": " Verify that 'ACCOUNT DELETED!' is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 22543,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T10:12:51.707Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-01-770e4--ACCOUNT-DELETED-is-visible-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d67a62e1068c03466ffa-8735ef80ab88b3b99726",
+              "file": "01_LoginRegister_Module/01_SignUp_test.spec.ts",
+              "line": 50,
+              "column": 9
             }
           ]
         }
@@ -199,9 +279,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-25T11:13:06.178Z",
-    "duration": 10471.159999999218,
-    "expected": 3,
+    "startTime": "2026-01-27T10:12:49.070Z",
+    "duration": 26767.946999999996,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
