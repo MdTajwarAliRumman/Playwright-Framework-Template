@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "chromium",
         "name": "chromium",
@@ -60,15 +60,15 @@
   },
   "suites": [
     {
-      "title": "01_LoginRegister_Module\\TC04_Logout_Test.spec.ts",
-      "file": "01_LoginRegister_Module/TC04_Logout_Test.spec.ts",
+      "title": "01_LoginRegister_Module\\TC05_Register_With_Existing_Mail_test.spec.ts",
+      "file": "01_LoginRegister_Module/TC05_Register_With_Existing_Mail_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Signup Flow",
-          "file": "01_LoginRegister_Module/TC04_Logout_Test.spec.ts",
+          "file": "01_LoginRegister_Module/TC05_Register_With_Existing_Mail_test.spec.ts",
           "line": 7,
           "column": 6,
           "specs": [
@@ -85,21 +85,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7067,
+                      "duration": 7844,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-28T08:38:34.062Z",
+                      "startTime": "2026-01-28T09:43:58.716Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-TC-06c33-age-is-visible-successfully-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-TC-f45ba-age-is-visible-successfully-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -107,9 +107,89 @@
                   "status": "expected"
                 }
               ],
-              "id": "72c77931f72130d05724-35a0515c4ed96dc1e55e",
-              "file": "01_LoginRegister_Module/TC04_Logout_Test.spec.ts",
+              "id": "02fbed7e332d01e66fa9-deb0e5bd481cf9017730",
+              "file": "01_LoginRegister_Module/TC05_Register_With_Existing_Mail_test.spec.ts",
               "line": 20,
+              "column": 9
+            },
+            {
+              "title": "Verify \"New User Signup!\" is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7965,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-28T09:43:58.709Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-TC-2be07--New-User-Signup-is-visible-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "02fbed7e332d01e66fa9-03f9832fc5bc306e0282",
+              "file": "01_LoginRegister_Module/TC05_Register_With_Existing_Mail_test.spec.ts",
+              "line": 24,
+              "column": 9
+            },
+            {
+              "title": "Verify that \"New User Signup!\" is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 9047,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-28T09:43:58.717Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-TC-c161b--New-User-Signup-is-visible-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "02fbed7e332d01e66fa9-a19ca3f2c88abdc9eadf",
+              "file": "01_LoginRegister_Module/TC05_Register_With_Existing_Mail_test.spec.ts",
+              "line": 28,
               "column": 9
             }
           ]
@@ -119,9 +199,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-28T08:38:32.181Z",
-    "duration": 9556.039999999979,
-    "expected": 1,
+    "startTime": "2026-01-28T09:43:56.664Z",
+    "duration": 11884.839999999997,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
