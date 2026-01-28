@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -60,20 +60,20 @@
   },
   "suites": [
     {
-      "title": "01_LoginRegister_Module\\TC03_Login_With_Invalid_Creds_test.spec.ts",
-      "file": "01_LoginRegister_Module/TC03_Login_With_Invalid_Creds_test.spec.ts",
+      "title": "01_LoginRegister_Module\\TC04_Logout_Test.spec.ts",
+      "file": "01_LoginRegister_Module/TC04_Logout_Test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Login Flow",
-          "file": "01_LoginRegister_Module/TC03_Login_With_Invalid_Creds_test.spec.ts",
-          "line": 33,
+          "title": "Signup Flow",
+          "file": "01_LoginRegister_Module/TC04_Logout_Test.spec.ts",
+          "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": "Verify Users could not Login by providing, Invalid email and valid password",
+              "title": "Verify that home page is visible successfully",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,21 +85,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 26,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9680,
+                      "duration": 7067,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-28T06:50:40.905Z",
+                      "startTime": "2026-01-28T08:38:34.062Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-TC-b93ed-id-email-and-valid-password-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-TC-06c33-age-is-visible-successfully-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -107,129 +107,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "4e001190eae74d744c82-d10bd5c59b9086bd725d",
-              "file": "01_LoginRegister_Module/TC03_Login_With_Invalid_Creds_test.spec.ts",
-              "line": 50,
-              "column": 13
-            },
-            {
-              "title": "Verify Users could not Login by providing, Valid email and invalid password",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 27,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 9880,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-28T06:50:40.865Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-TC-d564d--email-and-invalid-password-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4e001190eae74d744c82-4d268ec2393ef055e1fe",
-              "file": "01_LoginRegister_Module/TC03_Login_With_Invalid_Creds_test.spec.ts",
-              "line": 50,
-              "column": 13
-            },
-            {
-              "title": "Verify Users could not Login by providing, Invalid email and invalid password",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 28,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 9600,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-28T06:50:40.846Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-TC-e1eda--email-and-invalid-password-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4e001190eae74d744c82-b3856ffcdaa8b8802cfe",
-              "file": "01_LoginRegister_Module/TC03_Login_With_Invalid_Creds_test.spec.ts",
-              "line": 50,
-              "column": 13
-            },
-            {
-              "title": "Verify, Users could not Login by keeping the fileds empty",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 29,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 9572,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-28T06:50:40.890Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\01_LoginRegister_Module-TC-27b9c-by-keeping-the-fileds-empty-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4e001190eae74d744c82-d4a3c234ea1e3338c65f",
-              "file": "01_LoginRegister_Module/TC03_Login_With_Invalid_Creds_test.spec.ts",
-              "line": 58,
+              "id": "72c77931f72130d05724-35a0515c4ed96dc1e55e",
+              "file": "01_LoginRegister_Module/TC04_Logout_Test.spec.ts",
+              "line": 20,
               "column": 9
             }
           ]
@@ -239,9 +119,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-28T06:50:38.684Z",
-    "duration": 13268.662000000477,
-    "expected": 4,
+    "startTime": "2026-01-28T08:38:32.181Z",
+    "duration": 9556.039999999979,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
