@@ -1,0 +1,14 @@
+{
+    "Invalid email and valid password": {
+        "email": "4@gmail.com",
+        "password": "12345678"
+    },
+    "Valid email and invalid password": {
+        "email": "loxemav685@gxuzi.com",
+        "password": "2424"
+    },
+    "Invalid email and invalid password": {
+        "email": "tajwar1234@gmail.com",
+        "password": "123@@@678"
+    }
+}

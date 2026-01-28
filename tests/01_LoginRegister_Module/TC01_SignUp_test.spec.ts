@@ -33,15 +33,13 @@ test.describe('Signup Flow', () => {
 
     test(" Verify that 'ACCOUNT CREATED!' is visible", async ({ page }) => {
         await authPage.SignUp('Tajwar', generateEmail());
-        await authPage.AccountInfo('Md. Tajwar', '12345678', '10', 'March', '1995', 'Md. Tajwar', 'Ali', 'Softvence', '601/!, Mirpur',
-            'Dhaka', 'Australia', 'Dhaka', 'Dhaka', '1216', '01933954158');
+        await authPage.AccountInfo('Md. Tajwar', '12345678', '10', 'March', '1995', 'Md. Tajwar', 'Ali', 'Softvence', '601/!, Mirpur', 'Dhaka', 'Australia', 'Dhaka', 'Dhaka', '1216', '01933954158');
         await expect(page.getByText('Account Created!')).toBeVisible();
     })
 
     test(" Verify that 'logged in user' is visible", async ({ page }) => {
         await authPage.SignUp('Tajwar', generateEmail());
-        await authPage.AccountInfo('Md. Tajwar', '12345678', '10', 'March', '1995', 'Md. Tajwar', 'Ali', 'Softvence', '601/!, Mirpur',
-            'Dhaka', 'Australia', 'Dhaka', 'Dhaka', '1216', '01933954158');
+        await authPage.AccountInfo('Md. Tajwar', '12345678', '10', 'March', '1995', 'Md. Tajwar', 'Ali', 'Softvence', '601/!, Mirpur', 'Dhaka', 'Australia', 'Dhaka', 'Dhaka', '1216', '01933954158');
         await authPage.continueButton.click();
         await expect(authPage.loggedInUser).toBeVisible();
 
@@ -49,8 +47,7 @@ test.describe('Signup Flow', () => {
 
     test(" Verify that 'ACCOUNT DELETED!' is visible", async ({ page }) => {
         await authPage.SignUp('Tajwar', generateEmail());
-        await authPage.AccountInfo('Md. Tajwar', '12345678', '10', 'March', '1995', 'Md. Tajwar', 'Ali', 'Softvence', '601/!, Mirpur',
-            'Dhaka', 'Australia', 'Dhaka', 'Dhaka', '1216', '01933954158');
+        await authPage.AccountInfo('Md. Tajwar', '12345678', '10', 'March', '1995', 'Md. Tajwar', 'Ali', 'Softvence', '601/!, Mirpur', 'Dhaka', 'Australia', 'Dhaka', 'Dhaka', '1216', '01933954158');
         await authPage.continueButton.click();
         await expect(authPage.loggedInUser).toBeVisible();
         await authPage.userDeleteBtn.click();
