@@ -4,7 +4,7 @@ import { HomePage } from '../../src/pages/HomePage';
 import dotenv from 'dotenv';
 dotenv.config();
 
-test.describe('Signup Flow', () => {
+test.describe('Register Flow', () => {
     let authPage: AuthPage;
     let homePage: HomePage;
 
@@ -13,10 +13,10 @@ test.describe('Signup Flow', () => {
         homePage = new HomePage(page);
 
         await homePage.goToURL();
-        await homePage.clickOnElement(homePage.SignUpButton);
+        await homePage.clickOnElement();
     });
 
-    // this test is for homepage was visible or not
+    // this test is for homepage later on 
     test('Verify that home page is visible successfully', async ({ page }) => {
         await expect(page).toHaveTitle('Automation Exercise - Signup / Login');
     })
@@ -25,10 +25,9 @@ test.describe('Signup Flow', () => {
         await expect(page.getByText('New User Signup!')).toBeVisible();
     });
 
-    test('Verify "Account logout successfully done"', async ({ page }) => {
-        await authPage.Login(process.env.USER_EMAIL!, process.env.USER_PASSWORD!);
-        await authPage.logoutButton.click();
-        await expect(page.getByText('Login to your account')).toBeVisible();
+    test("Verify error 'Email Address already exist!' is visible", async ({ page }) => {
+        await authPage.SignUp('Tajwar', process.env.USER_EMAIL!);
+        await expect(page.getByText('Email Address already exist!')).toBeVisible();
     });
 
 });

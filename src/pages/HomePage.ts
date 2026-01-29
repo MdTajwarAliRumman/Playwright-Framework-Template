@@ -1,25 +1,34 @@
 import { Locator, Page } from "@playwright/test";
 
 export class HomePage {
-    // initialize all the pages
-
+    // < ---------  initialize all the pages --------->
     readonly page: Page;
     readonly SignUpButton: Locator;
+    readonly ContactButton: Locator;
 
     constructor(page: Page) {
         this.page = page
 
-        // Elements
+        // <-------- Elements -------->
         this.SignUpButton = page.locator("//a[normalize-space()='Signup / Login']")
+        this.ContactButton = page.locator("//a[normalize-space()='Contact us']")
+
     }
 
-    // Methods
+    // <-------- Methods -------->
     async goToURL() {
         await this.page.goto(`${process.env.AUTOMATION_EXERCISES_URL}`);
     }
 
+    // this method is for signup only   
     async clickSignup() {
-        await this.page.getByText('Signup / Login').click();
+        await this.SignUpButton.click();
     }
+
+    // this method is for click on any element
+    async clickOnElement(locator: Locator) {
+        await locator.click();
+    }
+
 }
 

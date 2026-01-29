@@ -13,8 +13,8 @@ test.describe('Signup Flow', () => {
         authPage = new AuthPage(page);
         homePage = new HomePage(page);
 
-        await authPage.goToURL();
-        await homePage.clickSignup();
+        await homePage.goToURL();
+        await homePage.clickOnElement(homePage.SignUpButton);
     });
 
     // this test is for homepage later on 

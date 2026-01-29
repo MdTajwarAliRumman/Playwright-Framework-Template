@@ -13,8 +13,8 @@ test.describe('Login Flow', () => {
         authPage = new AuthPage(page);
         homePage = new HomePage(page);
 
-        await authPage.goToURL();
-        await homePage.clickSignup();
+        await homePage.goToURL();
+        await homePage.clickOnElement(homePage.SignUpButton);
     });
 
     test('Verify "Login to your account" is visible', async ({ page }) => {

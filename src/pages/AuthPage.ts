@@ -80,9 +80,6 @@ export class AuthPage {
     }
 
     // Methods
-    async goToURL() {
-        await this.page.goto(`${process.env.AUTOMATION_EXERCISES_URL}`);
-    }
 
     async SignUp(name: string, email: string) {
         await this.NameTextBox.fill(name);

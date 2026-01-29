@@ -12,8 +12,8 @@ test.describe('Signup Flow', () => {
         authPage = new AuthPage(page);
         homePage = new HomePage(page);
 
-        await authPage.goToURL();
-        await homePage.clickSignup();
+        await homePage.goToURL();
+        await homePage.clickOnElement(homePage.SignUpButton);
     });
 
     test('Verify that home page is visible successfully', async ({ page }) => {
@@ -21,7 +21,7 @@ test.describe('Signup Flow', () => {
         // await expect(page).toHaveTitle('Automation Exercise');
         const homePage = new HomePage(page);
         const authPage = new AuthPage(page);
-        await authPage.goToURL();
+        await homePage.goToURL();
         await expect(page).toHaveTitle("Automation Exercise")
         await homePage.SignUpButton.click()
     })
@@ -30,7 +30,7 @@ test.describe('Signup Flow', () => {
 
         const homePage = new HomePage(page);
         const authPage = new AuthPage(page);
-        await authPage.goToURL();
+        await homePage.goToURL();
         await homePage.SignUpButton.click()
 
         await expect(page.getByText('New User Signup!')).toBeVisible();
@@ -44,7 +44,7 @@ test.describe('Signup Flow', () => {
 
         const homePage = new HomePage(page);
         const authPage = new AuthPage(page);
-        await authPage.goToURL();
+        await homePage.goToURL();
         await homePage.SignUpButton.click()
 
         await expect(page.getByText('New User Signup!')).toBeVisible();

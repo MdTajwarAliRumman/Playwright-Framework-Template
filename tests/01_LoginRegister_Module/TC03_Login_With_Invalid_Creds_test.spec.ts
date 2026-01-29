@@ -38,8 +38,8 @@ test.describe('Login Flow', () => {
         authPage = new AuthPage(page);
         homePage = new HomePage(page);
 
-        await authPage.goToURL();
-        await homePage.clickSignup();
+        await homePage.goToURL();
+        await homePage.clickOnElement(homePage.SignUpButton);
     });
 
     // I've used unknown to silence the missmatch error of TS in the test data and the object type
