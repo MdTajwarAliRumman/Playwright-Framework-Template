@@ -16,7 +16,6 @@ test.describe('Contact Flow', () => {
         await homePage.clickOnElement(homePage.ContactButton);
     });
 
-    // this test is for homepage later on 
     test('Verify that home page is visible successfully', async ({ page }) => {
         await expect(page).toHaveTitle('Automation Exercise - Contact Us');
     })

@@ -4,7 +4,7 @@ import { HomePage } from '../../src/pages/HomePage';
 import dotenv from 'dotenv';
 dotenv.config();
 
-test.describe('Contact Flow', () => {
+test.describe('TestCase Page Flow', () => {
     let testCasePage: TestCasePage;
     let homePage: HomePage;
 

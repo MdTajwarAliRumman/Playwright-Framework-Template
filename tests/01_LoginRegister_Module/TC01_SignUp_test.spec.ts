@@ -14,6 +14,7 @@ test.describe('Signup Flow', () => {
         homePage = new HomePage(page);
 
         await homePage.goToURL();
+
         await homePage.clickOnElement(homePage.SignUpButton);
     });
 

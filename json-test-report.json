@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "chromium",
         "name": "chromium",
@@ -60,20 +60,20 @@
   },
   "suites": [
     {
-      "title": "03_TestCase_Module\\TC07_TestCase_test.spec.ts",
-      "file": "03_TestCase_Module/TC07_TestCase_test.spec.ts",
+      "title": "04_Products_Module\\TC08_AllProducts_test.spec.ts",
+      "file": "04_Products_Module/TC08_AllProducts_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Contact Flow",
-          "file": "03_TestCase_Module/TC07_TestCase_test.spec.ts",
+          "title": "All Products Flow",
+          "file": "04_Products_Module/TC08_AllProducts_test.spec.ts",
           "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": "Verify user is navigated to test cases page successfully",
+              "title": "Verify that home page is visible successfully",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,21 +85,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 9,
+                      "workerIndex": 35,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8826,
+                      "duration": 7197,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-31T04:50:26.369Z",
+                      "startTime": "2026-01-31T06:24:03.882Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\03_TestCase_Module-TC07_Te-8e64b-est-cases-page-successfully-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC08_Al-348ee-age-is-visible-successfully-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -107,9 +107,89 @@
                   "status": "expected"
                 }
               ],
-              "id": "a003bbf84189cc1f8d9d-6ef24928e2e2185dcbc6",
-              "file": "03_TestCase_Module/TC07_TestCase_test.spec.ts",
+              "id": "9877d18ed418266bd1b1-b495e3646b247ad50455",
+              "file": "04_Products_Module/TC08_AllProducts_test.spec.ts",
               "line": 20,
+              "column": 9
+            },
+            {
+              "title": "Verify user is navigated to ALL PRODUCTS page successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 36,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 9862,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-31T06:24:03.884Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC08_Al-4e0c6--PRODUCTS-page-successfully-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9877d18ed418266bd1b1-cb7ef6994a40a3050187",
+              "file": "04_Products_Module/TC08_AllProducts_test.spec.ts",
+              "line": 24,
+              "column": 9
+            },
+            {
+              "title": "Verify that detail detail is visible: product name, category, price, availability, condition, brand",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 37,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7491,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-31T06:24:03.899Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC08_Al-8cc49-vailability-condition-brand-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9877d18ed418266bd1b1-2672a3717def7915ed61",
+              "file": "04_Products_Module/TC08_AllProducts_test.spec.ts",
+              "line": 28,
               "column": 9
             }
           ]
@@ -119,9 +199,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-31T04:50:24.474Z",
-    "duration": 11414.599000000162,
-    "expected": 1,
+    "startTime": "2026-01-31T06:24:01.865Z",
+    "duration": 12734.787000000477,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
