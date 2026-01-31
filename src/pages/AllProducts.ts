@@ -1,4 +1,4 @@
-import { Locator, Page } from "@playwright/test";
+import { expect, Locator, Page } from "@playwright/test";
 
 export class AllProductsPage {
     // initialize all the pages
@@ -55,6 +55,34 @@ export class AllProductsPage {
 
     async selectProducts() {
         await this.products.click();
+    }
+
+
+    async verifyAllCartProductsDetails() {
+        const AddedCartProducts = this.page.locator('tbody tr[id^="product-"]');
+        const count = await AddedCartProducts.count();
+
+        expect(count).toBeGreaterThan(0);
+
+        for (let i = 0; i < count; i++) {
+            const cartProduct = AddedCartProducts.nth(i);
+
+            // Product Name
+            const name = cartProduct.locator('.cart_description h4 a');
+            await expect(name).toBeVisible();
+
+            // Price
+            const price = cartProduct.locator('.cart_price p');
+            await expect(price).toBeVisible();
+
+            // Quantity
+            const quantity = cartProduct.locator('.cart_quantity button');
+            await expect(quantity).toBeVisible();
+
+            // Total
+            const total = cartProduct.locator('.cart_total_price');
+            await expect(total).toBeVisible();
+        }
     }
 
 }
