@@ -7,6 +7,8 @@ export class HomePage {
     readonly ContactButton: Locator;
     readonly TestCaseButton: Locator;
     readonly ProductsButton: Locator;
+    readonly SubscriptionField: Locator;
+    readonly SubscriptionButton: Locator;
 
     constructor(page: Page) {
         this.page = page
@@ -16,6 +18,8 @@ export class HomePage {
         this.ContactButton = page.locator("//a[normalize-space()='Contact us']")
         this.TestCaseButton = page.locator("//a[contains(text(),'Test Cases')]")
         this.ProductsButton = page.locator("//a[@href='/products']")
+        this.SubscriptionField = page.locator("//input[@id='susbscribe_email']")
+        this.SubscriptionButton = page.locator("//button[@id='subscribe']")
 
     }
 
@@ -33,6 +37,12 @@ export class HomePage {
     async clickOnElement(locator: Locator) {
         await locator.click();
     }
+
+    // this method is for hovering over any element
+    async hoverOnElement(locator: Locator) {
+        await locator.hover();
+    }
+
 
 }
 

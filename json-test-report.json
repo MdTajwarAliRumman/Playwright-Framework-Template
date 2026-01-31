@@ -60,20 +60,20 @@
   },
   "suites": [
     {
-      "title": "04_Products_Module\\TC09_Search_Products_test.spec.ts",
-      "file": "04_Products_Module/TC09_Search_Products_test.spec.ts",
+      "title": "05_Subscription_Module\\TC10_Scrolling_subscription_test.spec.ts",
+      "file": "05_Subscription_Module/TC10_Scrolling_subscription_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "All Products Flow",
-          "file": "04_Products_Module/TC09_Search_Products_test.spec.ts",
-          "line": 7,
+          "title": "Subscription Flow",
+          "file": "05_Subscription_Module/TC10_Scrolling_subscription_test.spec.ts",
+          "line": 6,
           "column": 6,
           "specs": [
             {
-              "title": "Verify all the products related to search are visible",
+              "title": " Verify success message \"You have been successfully subscribed!\" is visible",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,21 +85,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 40,
+                      "workerIndex": 45,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9404,
+                      "duration": 6158,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-31T06:48:14.235Z",
+                      "startTime": "2026-01-31T08:50:39.730Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC09_Se-59034-lated-to-search-are-visible-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\05_Subscription_Module-TC1-df43e-fully-subscribed-is-visible-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -107,9 +107,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "9a56ba2d8ef2553294bb-85e14e6e988df6298d58",
-              "file": "04_Products_Module/TC09_Search_Products_test.spec.ts",
-              "line": 34,
+              "id": "7a9f835a62c6c77ff68a-a7d538b0b8a999fd720c",
+              "file": "05_Subscription_Module/TC10_Scrolling_subscription_test.spec.ts",
+              "line": 22,
               "column": 9
             }
           ]
@@ -119,8 +119,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-31T06:48:12.298Z",
-    "duration": 11985.52499999851,
+    "startTime": "2026-01-31T08:50:37.834Z",
+    "duration": 8694.789000000805,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
