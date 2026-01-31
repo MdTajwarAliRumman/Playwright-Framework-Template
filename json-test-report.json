@@ -60,20 +60,20 @@
   },
   "suites": [
     {
-      "title": "02_ContactUs_Module\\TC06_ContactUs_Form_test.spec.ts",
-      "file": "02_ContactUs_Module/TC06_ContactUs_Form_test.spec.ts",
+      "title": "03_TestCase_Module\\TC07_TestCase_test.spec.ts",
+      "file": "03_TestCase_Module/TC07_TestCase_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Contact Flow",
-          "file": "02_ContactUs_Module/TC06_ContactUs_Form_test.spec.ts",
+          "file": "03_TestCase_Module/TC07_TestCase_test.spec.ts",
           "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": "Verify success message 'Success! Your details have been submitted successfully.' is visible",
+              "title": "Verify user is navigated to test cases page successfully",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,21 +85,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 20,
+                      "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 11949,
+                      "duration": 8826,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-29T11:24:28.476Z",
+                      "startTime": "2026-01-31T04:50:26.369Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\02_ContactUs_Module-TC06_C-9a6eb-ted-successfully-is-visible-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\03_TestCase_Module-TC07_Te-8e64b-est-cases-page-successfully-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -107,9 +107,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "1c56b346e2d29fbf3ae7-4a451ec37ee3be4aacb8",
-              "file": "02_ContactUs_Module/TC06_ContactUs_Form_test.spec.ts",
-              "line": 28,
+              "id": "a003bbf84189cc1f8d9d-6ef24928e2e2185dcbc6",
+              "file": "03_TestCase_Module/TC07_TestCase_test.spec.ts",
+              "line": 20,
               "column": 9
             }
           ]
@@ -119,8 +119,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-29T11:24:26.608Z",
-    "duration": 14568.554000000004,
+    "startTime": "2026-01-31T04:50:24.474Z",
+    "duration": 11414.599000000162,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

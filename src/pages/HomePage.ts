@@ -5,6 +5,7 @@ export class HomePage {
     readonly page: Page;
     readonly SignUpButton: Locator;
     readonly ContactButton: Locator;
+    readonly TestCaseButton: Locator;
 
     constructor(page: Page) {
         this.page = page
@@ -12,6 +13,7 @@ export class HomePage {
         // <-------- Elements -------->
         this.SignUpButton = page.locator("//a[normalize-space()='Signup / Login']")
         this.ContactButton = page.locator("//a[normalize-space()='Contact us']")
+        this.TestCaseButton = page.locator("//a[contains(text(),'Test Cases')]")
 
     }
 
