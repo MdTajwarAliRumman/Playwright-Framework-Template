@@ -60,20 +60,20 @@
   },
   "suites": [
     {
-      "title": "05_Subscription_Module\\TC10_Scrolling_subscription_test.spec.ts",
-      "file": "05_Subscription_Module/TC10_Scrolling_subscription_test.spec.ts",
+      "title": "04_Products_Module\\TC10_AddProducts_ToCart_test.spec.ts",
+      "file": "04_Products_Module/TC10_AddProducts_ToCart_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Subscription Flow",
-          "file": "05_Subscription_Module/TC10_Scrolling_subscription_test.spec.ts",
-          "line": 6,
+          "title": "All Products Flow",
+          "file": "04_Products_Module/TC10_AddProducts_ToCart_test.spec.ts",
+          "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": " Verify success message \"You have been successfully subscribed!\" is visible",
+              "title": "Verify both products are added to Cart",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,21 +85,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 45,
+                      "workerIndex": 81,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6158,
+                      "duration": 8953,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-31T08:50:39.730Z",
+                      "startTime": "2026-01-31T10:18:44.266Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\05_Subscription_Module-TC1-df43e-fully-subscribed-is-visible-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC10_Ad-36f6c--products-are-added-to-Cart-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -107,9 +107,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "7a9f835a62c6c77ff68a-a7d538b0b8a999fd720c",
-              "file": "05_Subscription_Module/TC10_Scrolling_subscription_test.spec.ts",
-              "line": 22,
+              "id": "d8362bcd853780955123-8e0801eca3aeb7c54215",
+              "file": "04_Products_Module/TC10_AddProducts_ToCart_test.spec.ts",
+              "line": 36,
               "column": 9
             }
           ]
@@ -119,8 +119,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-31T08:50:37.834Z",
-    "duration": 8694.789000000805,
+    "startTime": "2026-01-31T10:18:42.406Z",
+    "duration": 11614.714999999851,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

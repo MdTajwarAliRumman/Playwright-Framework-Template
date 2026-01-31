@@ -15,6 +15,9 @@ export class AllProductsPage {
     readonly productBrand: Locator;
     readonly searchBox: Locator;
     readonly searchButton: Locator;
+    readonly AddToCart: Locator;
+    readonly products: Locator;
+    readonly checkoutButton: Locator;
 
     constructor(page: Page) {
         this.page = page
@@ -33,11 +36,25 @@ export class AllProductsPage {
         this.searchBox = page.locator("//input[@id='search_product']")
         this.searchButton = page.locator("//button[@id='submit_search']")
 
+        this.AddToCart = page.getByText("Add to cart")
+
+        this.products = page.locator('.product-image-wrapper');
+
+        this.checkoutButton = page.locator("//a[normalize-space()='Proceed To Checkout']");
+
     }
 
     // Methods
     async clickViewProduct() {
         await this.ViewProduct.click();
+    }
+
+    async clickAddToCart() {
+        await this.AddToCart.click();
+    }
+
+    async selectProducts() {
+        await this.products.click();
     }
 
 }
