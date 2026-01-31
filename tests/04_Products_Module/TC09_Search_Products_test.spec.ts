@@ -25,16 +25,16 @@ test.describe('All Products Flow', () => {
         await expect(page.getByText('All Products')).toHaveText('All Products');
     });
 
-    test('Verify that detail detail is visible: product name, category, price, availability, condition, brand', async ({ page }) => {
-        await homePage.clickOnElement(allProductsPage.ViewProduct);
-        await expect(allProductsPage.productInformation).toBeVisible();
-        await expect(allProductsPage.productName).toBeVisible();
-        await expect(allProductsPage.productCategory).toBeVisible();
-        await expect(allProductsPage.productPrice).toBeVisible();
-        await expect(allProductsPage.productAvailability).toBeVisible();
-        await expect(allProductsPage.productQuantity).toBeVisible();
-        await expect(allProductsPage.productCondition).toBeVisible();
-        await expect(allProductsPage.productBrand).toBeVisible();
+    test('Verify "SEARCHED PRODUCTS" is visible', async ({ page }) => {
+        await allProductsPage.searchBox.fill('Men Tshirt');
+        await allProductsPage.searchButton.click();
+        await expect(page.getByText("Searched Products")).toBeVisible();
+    });
+
+    test('Verify all the products related to search are visible', async ({ page }) => {
+        await allProductsPage.searchBox.fill('Men Tshirt');
+        await allProductsPage.searchButton.click();
+        await expect(allProductsPage.ViewProduct).toBeVisible();
     });
 
 });

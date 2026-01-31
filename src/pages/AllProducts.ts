@@ -13,6 +13,8 @@ export class AllProductsPage {
     readonly productAvailability: Locator;
     readonly productCondition: Locator;
     readonly productBrand: Locator;
+    readonly searchBox: Locator;
+    readonly searchButton: Locator;
 
     constructor(page: Page) {
         this.page = page
@@ -27,6 +29,9 @@ export class AllProductsPage {
         this.productAvailability = page.locator("//div[@class='product-details']//p[1]")
         this.productCondition = page.locator("//div[@class='product-details']//p[1]")
         this.productBrand = page.locator("//div[@class='product-details']//p[1]")
+
+        this.searchBox = page.locator("//input[@id='search_product']")
+        this.searchButton = page.locator("//button[@id='submit_search']")
 
     }
 
