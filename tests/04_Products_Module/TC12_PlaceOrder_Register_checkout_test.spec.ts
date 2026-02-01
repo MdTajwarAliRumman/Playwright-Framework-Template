@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import { AllProductsPage } from '../../src/pages/AllProducts';
 import { HomePage } from '../../src/pages/HomePage';
 import { AuthPage } from '../../src/pages/AuthPage';
+import { PaymentPage } from '../../src/pages/PaymentPage';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -9,6 +10,7 @@ test.describe('Register Checkout Flow', () => {
     let allProductsPage: AllProductsPage;
     let homePage: HomePage;
     let authPage: AuthPage;
+    let paymentPage: PaymentPage;
     const generateEmail = () => `user_${Date.now()}@testmail.com`;
 
 
@@ -16,6 +18,7 @@ test.describe('Register Checkout Flow', () => {
         allProductsPage = new AllProductsPage(page);
         homePage = new HomePage(page);
         authPage = new AuthPage(page);
+        paymentPage = new PaymentPage(page);
 
         await homePage.goToURL();
         // await homePage.clickOnElement(homePage.ProductsButton);
@@ -71,28 +74,31 @@ test.describe('Register Checkout Flow', () => {
             await expect(page.getByText('Review Your Order')).toBeVisible();
         })
 
+        await test.step(" Verify Filling up the message area and then placing order", async () => {
+            await allProductsPage.textAreaMessage.fill(process.env.DESCRIPTION_DEMO!);
+            await allProductsPage.placeOrderButton.click();
+        })
 
+        await test.step(" Verify Payment details are being stored", async () => {
+            await paymentPage.nameOnCard.fill(process.env.USER_NAME!);
+            await paymentPage.cardNumber.fill(process.env.NUMBER!);
+            await paymentPage.cvc.fill('123');
+            await paymentPage.expiryMonth.fill(process.env.MONTH!);
+            await paymentPage.expiryYear.fill(process.env.YEAR!);
+            await paymentPage.payButton.click();
+        })
+
+        await test.step(" Verify success message 'Your order has been placed successfully!'", async () => {
+            await expect(page.getByText('Order Placed!')).toBeVisible();
+        })
+
+        await test.step(" Verify that Account was successfully deleted", async () => {
+            await authPage.continueButton.click();
+            await homePage.hoverOnElement(authPage.userDeleteBtn)
+            await homePage.clickOnElement(authPage.userDeleteBtn);
+            await expect(page.getByText('Account Deleted!')).toBeVisible();
+        })
     });
-
-
-
-
-
-
-    // test('Verify Register while checkout', async ({ page }) => {
-    //     await homePage.hoverOnElement(allProductsPage.ViewProduct1);
-    //     //nth means selecting the second product
-    //     await allProductsPage.products.nth(2).hover();
-    //     await homePage.clickOnElement(allProductsPage.ViewProduct2);
-    //     await expect(page.getByText("Add to cart").first()).toBeVisible();
-    //     await allProductsPage.productQuantity.fill("2");
-    //     await allProductsPage.clickAddToCart();
-    //     await homePage.clickOnElement(page.getByText("View Cart").first());
-    //     test(' Verify that cart page is displayed', async ({ page }) => {
-    //         await expect(allProductsPage.checkoutButton).toBeVisible();
-    //     })
-
-    // });
 
 });
 

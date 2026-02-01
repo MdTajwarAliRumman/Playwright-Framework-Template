@@ -21,6 +21,8 @@ export class AllProductsPage {
     readonly products: Locator;
     readonly checkoutButton: Locator;
     readonly productQuantityInCart: Locator;
+    readonly textAreaMessage: Locator;
+    readonly placeOrderButton: Locator;
 
     constructor(page: Page) {
         this.page = page
@@ -50,6 +52,10 @@ export class AllProductsPage {
 
         this.registerWhileCheckoutBtn = page.locator("//u[normalize-space()='Register / Login']");
 
+        this.textAreaMessage = page.locator("//textarea[@name='message']");
+        this.placeOrderButton = page.locator("//a[normalize-space()='Place Order']");
+
+
     }
 
     // Methods
@@ -65,7 +71,7 @@ export class AllProductsPage {
         await this.products.click();
     }
 
-
+    // this loop is for different items or product selections and there visibility
     async verifyAllCartProductsDetails() {
         const AddedCartProducts = this.page.locator('tbody tr[id^="product-"]');
         const count = await AddedCartProducts.count();

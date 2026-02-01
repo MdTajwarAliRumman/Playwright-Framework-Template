@@ -69,7 +69,7 @@
         {
           "title": "Register Checkout Flow",
           "file": "04_Products_Module/TC12_PlaceOrder_Register_checkout_test.spec.ts",
-          "line": 8,
+          "line": 9,
           "column": 6,
           "specs": [
             {
@@ -85,10 +85,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 38,
+                      "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 13681,
+                      "duration": 33099,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -96,34 +96,50 @@
                       "steps": [
                         {
                           "title": "Open product and add to cart",
-                          "duration": 3171
+                          "duration": 749
                         },
                         {
                           "title": "Verify cart page is displayed",
-                          "duration": 815
+                          "duration": 747
                         },
                         {
                           "title": "Verify Register while checkout",
-                          "duration": 481
+                          "duration": 462
                         },
                         {
                           "title": "Verify that \"ENTER ACCOUNT INFORMATION\" is visible",
-                          "duration": 552
+                          "duration": 636
                         },
                         {
                           "title": " Verify that 'ACCOUNT CREATED!' is visible",
-                          "duration": 1323
+                          "duration": 1591
                         },
                         {
                           "title": " Verify that 'logged in user' is visible",
-                          "duration": 510
+                          "duration": 556
                         },
                         {
                           "title": " Verify Address Details and Review Your Order",
-                          "duration": 958
+                          "duration": 8792
+                        },
+                        {
+                          "title": " Verify Filling up the message area and then placing order",
+                          "duration": 1430
+                        },
+                        {
+                          "title": " Verify Payment details are being stored",
+                          "duration": 1923
+                        },
+                        {
+                          "title": " Verify success message 'Your order has been placed successfully!'",
+                          "duration": 63
+                        },
+                        {
+                          "title": " Verify that Account was successfully deleted",
+                          "duration": 6791
                         }
                       ],
-                      "startTime": "2026-02-01T06:49:03.126Z",
+                      "startTime": "2026-02-01T08:57:36.295Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -139,7 +155,7 @@
               ],
               "id": "07c2d50512e2333c465b-2b7e0bbe7cfc213647fc",
               "file": "04_Products_Module/TC12_PlaceOrder_Register_checkout_test.spec.ts",
-              "line": 31,
+              "line": 34,
               "column": 9
             }
           ]
@@ -149,8 +165,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-01T06:49:01.271Z",
-    "duration": 16374.543999999762,
+    "startTime": "2026-02-01T08:57:34.245Z",
+    "duration": 36192.55799999996,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
