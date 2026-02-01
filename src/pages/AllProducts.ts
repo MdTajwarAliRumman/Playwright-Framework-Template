@@ -4,6 +4,7 @@ export class AllProductsPage {
     // initialize all the pages
 
     readonly page: Page;
+    readonly registerWhileCheckoutBtn: Locator;
     readonly ViewProduct1: Locator;
     readonly ViewProduct2: Locator;
     readonly productInformation: Locator;
@@ -46,6 +47,8 @@ export class AllProductsPage {
         this.checkoutButton = page.locator("//a[normalize-space()='Proceed To Checkout']");
 
         this.productQuantityInCart = page.locator(".cart_quantity");
+
+        this.registerWhileCheckoutBtn = page.locator("//u[normalize-space()='Register / Login']");
 
     }
 

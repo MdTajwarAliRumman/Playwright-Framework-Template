@@ -9,6 +9,7 @@ export class HomePage {
     readonly ProductsButton: Locator;
     readonly SubscriptionField: Locator;
     readonly SubscriptionButton: Locator;
+    readonly CartButton: Locator;
 
     constructor(page: Page) {
         this.page = page
@@ -20,6 +21,7 @@ export class HomePage {
         this.ProductsButton = page.locator("//a[@href='/products']")
         this.SubscriptionField = page.locator("//input[@id='susbscribe_email']")
         this.SubscriptionButton = page.locator("//button[@id='subscribe']")
+        this.CartButton = page.locator("//a[normalize-space()='Cart']")
 
     }
 

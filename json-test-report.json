@@ -60,20 +60,20 @@
   },
   "suites": [
     {
-      "title": "04_Products_Module\\TC11_Product_Quantity_test.spec.ts",
-      "file": "04_Products_Module/TC11_Product_Quantity_test.spec.ts",
+      "title": "04_Products_Module\\TC12_PlaceOrder_Register_checkout_test.spec.ts",
+      "file": "04_Products_Module/TC12_PlaceOrder_Register_checkout_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Cart Products Flow",
-          "file": "04_Products_Module/TC11_Product_Quantity_test.spec.ts",
-          "line": 7,
+          "title": "Register Checkout Flow",
+          "file": "04_Products_Module/TC12_PlaceOrder_Register_checkout_test.spec.ts",
+          "line": 8,
           "column": 6,
           "specs": [
             {
-              "title": "Verify Specific Product Details are visible and product is displayed in cart page with exact quantity",
+              "title": "Verify Register while checkout",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,21 +85,51 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 17,
+                      "workerIndex": 38,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8267,
+                      "duration": 13681,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-01T05:15:13.137Z",
+                      "steps": [
+                        {
+                          "title": "Open product and add to cart",
+                          "duration": 3171
+                        },
+                        {
+                          "title": "Verify cart page is displayed",
+                          "duration": 815
+                        },
+                        {
+                          "title": "Verify Register while checkout",
+                          "duration": 481
+                        },
+                        {
+                          "title": "Verify that \"ENTER ACCOUNT INFORMATION\" is visible",
+                          "duration": 552
+                        },
+                        {
+                          "title": " Verify that 'ACCOUNT CREATED!' is visible",
+                          "duration": 1323
+                        },
+                        {
+                          "title": " Verify that 'logged in user' is visible",
+                          "duration": 510
+                        },
+                        {
+                          "title": " Verify Address Details and Review Your Order",
+                          "duration": 958
+                        }
+                      ],
+                      "startTime": "2026-02-01T06:49:03.126Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC11_Pr-e1103-rt-page-with-exact-quantity-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC12_Pl-f7036-ify-Register-while-checkout-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -107,9 +137,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "523b9e8e7d710c1f3f37-42e88738845bb2416e4f",
-              "file": "04_Products_Module/TC11_Product_Quantity_test.spec.ts",
-              "line": 28,
+              "id": "07c2d50512e2333c465b-2b7e0bbe7cfc213647fc",
+              "file": "04_Products_Module/TC12_PlaceOrder_Register_checkout_test.spec.ts",
+              "line": 31,
               "column": 9
             }
           ]
@@ -119,8 +149,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-01T05:15:11.207Z",
-    "duration": 10956.756000000052,
+    "startTime": "2026-02-01T06:49:01.271Z",
+    "duration": 16374.543999999762,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
