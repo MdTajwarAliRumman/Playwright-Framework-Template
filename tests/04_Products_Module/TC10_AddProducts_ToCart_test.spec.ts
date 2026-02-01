@@ -26,7 +26,7 @@ test.describe('Cart Products Flow', () => {
     });
 
     test('Verify Hover over first product and click Add to cart', async ({ page }) => {
-        await homePage.hoverOnElement(allProductsPage.ViewProduct);
+        await homePage.hoverOnElement(allProductsPage.ViewProduct1);
         await expect(page.getByText("Add to cart").first()).toBeVisible();
         await homePage.clickOnElement(allProductsPage.AddToCart.first());
         await expect(page.getByText("Continue Shopping").first()).toBeVisible();
@@ -38,7 +38,7 @@ test.describe('Cart Products Flow', () => {
         await homePage.clickOnElement(allProductsPage.AddToCart.first());
         await page.getByText("Continue Shopping").first().click();
 
-        await homePage.hoverOnElement(allProductsPage.ViewProduct);
+        await homePage.hoverOnElement(allProductsPage.ViewProduct1);
         //nth means selecting the second product
         await allProductsPage.products.nth(2).hover();
         await allProductsPage.AddToCart.nth(2).click();
@@ -53,7 +53,7 @@ test.describe('Cart Products Flow', () => {
         await homePage.clickOnElement(allProductsPage.AddToCart.first());
         await page.getByText("Continue Shopping").first().click();
 
-        await homePage.hoverOnElement(allProductsPage.ViewProduct);
+        await homePage.hoverOnElement(allProductsPage.ViewProduct1);
         //nth means selecting the second product
         await allProductsPage.products.nth(2).hover();
         await allProductsPage.AddToCart.nth(2).click();

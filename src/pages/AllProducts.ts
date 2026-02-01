@@ -4,7 +4,8 @@ export class AllProductsPage {
     // initialize all the pages
 
     readonly page: Page;
-    readonly ViewProduct: Locator;
+    readonly ViewProduct1: Locator;
+    readonly ViewProduct2: Locator;
     readonly productInformation: Locator;
     readonly productPrice: Locator;
     readonly productName: Locator;
@@ -18,12 +19,14 @@ export class AllProductsPage {
     readonly AddToCart: Locator;
     readonly products: Locator;
     readonly checkoutButton: Locator;
+    readonly productQuantityInCart: Locator;
 
     constructor(page: Page) {
         this.page = page
 
         // Elements
-        this.ViewProduct = page.locator("//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[2]//ul[1]//li[1]//a[1]")
+        this.ViewProduct1 = page.locator("a[href='/product_details/1']")
+        this.ViewProduct2 = page.locator("a[href='/product_details/3']")
         this.productInformation = page.locator("//div[@class='product-information']")
         this.productPrice = page.locator("div[class='product-information'] span span")
         this.productName = page.locator("div[class='product-information'] h2")
@@ -42,11 +45,13 @@ export class AllProductsPage {
 
         this.checkoutButton = page.locator("//a[normalize-space()='Proceed To Checkout']");
 
+        this.productQuantityInCart = page.locator(".cart_quantity");
+
     }
 
     // Methods
     async clickViewProduct() {
-        await this.ViewProduct.click();
+        await this.ViewProduct1.click();
     }
 
     async clickAddToCart() {

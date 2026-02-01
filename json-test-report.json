@@ -60,20 +60,20 @@
   },
   "suites": [
     {
-      "title": "04_Products_Module\\TC10_AddProducts_ToCart_test.spec.ts",
-      "file": "04_Products_Module/TC10_AddProducts_ToCart_test.spec.ts",
+      "title": "04_Products_Module\\TC11_Product_Quantity_test.spec.ts",
+      "file": "04_Products_Module/TC11_Product_Quantity_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "All Products Flow",
-          "file": "04_Products_Module/TC10_AddProducts_ToCart_test.spec.ts",
+          "title": "Cart Products Flow",
+          "file": "04_Products_Module/TC11_Product_Quantity_test.spec.ts",
           "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": "Verify product details are added to Cart",
+              "title": "Verify Specific Product Details are visible and product is displayed in cart page with exact quantity",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,21 +85,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 83,
+                      "workerIndex": 17,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8694,
+                      "duration": 8267,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-31T11:29:55.522Z",
+                      "startTime": "2026-02-01T05:15:13.137Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC10_Ad-072f7-t-details-are-added-to-Cart-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC11_Pr-e1103-rt-page-with-exact-quantity-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -107,9 +107,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "d8362bcd853780955123-166965f469ec0d053dd6",
-              "file": "04_Products_Module/TC10_AddProducts_ToCart_test.spec.ts",
-              "line": 52,
+              "id": "523b9e8e7d710c1f3f37-42e88738845bb2416e4f",
+              "file": "04_Products_Module/TC11_Product_Quantity_test.spec.ts",
+              "line": 28,
               "column": 9
             }
           ]
@@ -119,8 +119,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-31T11:29:53.508Z",
-    "duration": 11448.085999999195,
+    "startTime": "2026-02-01T05:15:11.207Z",
+    "duration": 10956.756000000052,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

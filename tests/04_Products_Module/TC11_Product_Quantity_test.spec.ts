@@ -4,7 +4,7 @@ import { HomePage } from '../../src/pages/HomePage';
 import dotenv from 'dotenv';
 dotenv.config();
 
-test.describe('All Products Flow', () => {
+test.describe('Cart Products Flow', () => {
     let allProductsPage: AllProductsPage;
     let homePage: HomePage;
 
@@ -25,16 +25,16 @@ test.describe('All Products Flow', () => {
         await expect(page.getByText('All Products')).toHaveText('All Products');
     });
 
-    test('Verify that detail detail is visible: product name, category, price, availability, condition, brand', async ({ page }) => {
-        await homePage.clickOnElement(allProductsPage.ViewProduct1);
-        await expect(allProductsPage.productInformation).toBeVisible();
-        await expect(allProductsPage.productName).toBeVisible();
-        await expect(allProductsPage.productCategory).toBeVisible();
-        await expect(allProductsPage.productPrice).toBeVisible();
-        await expect(allProductsPage.productAvailability).toBeVisible();
-        await expect(allProductsPage.productQuantity).toBeVisible();
-        await expect(allProductsPage.productCondition).toBeVisible();
-        await expect(allProductsPage.productBrand).toBeVisible();
+    test('Verify Specific Product Details are visible and product is displayed in cart page with exact quantity', async ({ page }) => {
+        await homePage.hoverOnElement(allProductsPage.ViewProduct1);
+        //nth means selecting the second product
+        await allProductsPage.products.nth(2).hover();
+        await homePage.clickOnElement(allProductsPage.ViewProduct2);
+        await expect(page.getByText("Add to cart").first()).toBeVisible();
+        await allProductsPage.productQuantity.fill("4");
+        await allProductsPage.clickAddToCart();
+        await homePage.clickOnElement(page.getByText("View Cart").first());
+        await expect(allProductsPage.productQuantityInCart).toHaveText("4");
     });
 
 });

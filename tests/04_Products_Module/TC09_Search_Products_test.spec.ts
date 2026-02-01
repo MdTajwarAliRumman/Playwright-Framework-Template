@@ -34,7 +34,7 @@ test.describe('All Products Flow', () => {
     test('Verify all the products related to search are visible', async ({ page }) => {
         await allProductsPage.searchBox.fill('Men Tshirt');
         await allProductsPage.searchButton.click();
-        await expect(allProductsPage.ViewProduct).toBeVisible();
+        await expect(allProductsPage.ViewProduct1).toBeVisible();
     });
 
 });
