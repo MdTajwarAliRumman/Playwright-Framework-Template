@@ -60,15 +60,15 @@
   },
   "suites": [
     {
-      "title": "04_Products_Module\\TC13_PlaceOrder_Before_Register_Checkout_test.spec.ts",
-      "file": "04_Products_Module/TC13_PlaceOrder_Before_Register_Checkout_test.spec.ts",
+      "title": "04_Products_Module\\TC14_PlaceOrder_Login_Before_Checkout_test.spec.ts",
+      "file": "04_Products_Module/TC14_PlaceOrder_Login_Before_Checkout_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Register Checkout Flow",
-          "file": "04_Products_Module/TC13_PlaceOrder_Before_Register_Checkout_test.spec.ts",
+          "file": "04_Products_Module/TC14_PlaceOrder_Login_Before_Checkout_test.spec.ts",
           "line": 9,
           "column": 6,
           "specs": [
@@ -85,10 +85,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 13,
+                      "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 14451,
+                      "duration": 13844,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -96,52 +96,44 @@
                       "steps": [
                         {
                           "title": "Verify that \"ENTER ACCOUNT INFORMATION\" is visible",
-                          "duration": 932
-                        },
-                        {
-                          "title": " Verify that 'ACCOUNT CREATED!' is visible",
-                          "duration": 1378
+                          "duration": 1385
                         },
                         {
                           "title": " Verify that 'logged in user' is visible",
-                          "duration": 500
+                          "duration": 84
                         },
                         {
                           "title": "Open product and add to cart",
-                          "duration": 637
+                          "duration": 795
                         },
                         {
                           "title": "Verify cart page is displayed",
-                          "duration": 784
+                          "duration": 1354
                         },
                         {
                           "title": " Verify Address Details and Review Your Order",
-                          "duration": 812
+                          "duration": 865
                         },
                         {
                           "title": " Verify Filling up the message area and then placing order",
-                          "duration": 1181
+                          "duration": 1979
                         },
                         {
                           "title": " Verify Payment details are being stored",
-                          "duration": 1786
+                          "duration": 1791
                         },
                         {
                           "title": " Verify success message 'Your order has been placed successfully!'",
-                          "duration": 52
-                        },
-                        {
-                          "title": " Verify that Account was successfully deleted",
-                          "duration": 974
+                          "duration": 81
                         }
                       ],
-                      "startTime": "2026-02-01T09:27:06.900Z",
+                      "startTime": "2026-02-01T09:41:12.022Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC13_Pl-150e4-ify-Register-while-checkout-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC14_Pl-a0e89-ify-Register-while-checkout-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -149,9 +141,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "924d6fa9edf33960f590-c64332f9a94c90a4e8be",
-              "file": "04_Products_Module/TC13_PlaceOrder_Before_Register_Checkout_test.spec.ts",
-              "line": 35,
+              "id": "8cd05e1d0e52881f4517-ae02e3c213fb5e5af24a",
+              "file": "04_Products_Module/TC14_PlaceOrder_Login_Before_Checkout_test.spec.ts",
+              "line": 33,
               "column": 9
             }
           ]
@@ -161,8 +153,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-01T09:27:05.038Z",
-    "duration": 17247.929000000004,
+    "startTime": "2026-02-01T09:41:10.131Z",
+    "duration": 16575.60799999998,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

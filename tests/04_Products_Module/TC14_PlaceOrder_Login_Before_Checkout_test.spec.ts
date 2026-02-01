@@ -12,8 +12,6 @@ test.describe('Register Checkout Flow', () => {
 
     let authPage: AuthPage;
     let paymentPage: PaymentPage;
-    const generateEmail = () => `user_${Date.now()}@testmail.com`;
-
 
     test.beforeEach(async ({ page }) => {
         allProductsPage = new AllProductsPage(page);
@@ -36,17 +34,10 @@ test.describe('Register Checkout Flow', () => {
 
         await test.step('Verify that "ENTER ACCOUNT INFORMATION" is visible', async () => {
             await homePage.clickOnElement(homePage.SignUpButton);
-            await authPage.SignUp('Tajwar', generateEmail());
-            await expect(page.getByText('ENTER ACCOUNT INFORMATION')).toBeVisible();
+            await authPage.Login(process.env.USER_EMAIL!, process.env.USER_PASSWORD!);
         });
 
-        await test.step(" Verify that 'ACCOUNT CREATED!' is visible", async () => {
-            await authPage.AccountInfo('Md. Tajwar', '12345678', '10', 'March', '1995', 'Md. Tajwar', 'Ali', 'Softvence', '601/!, Mirpur', 'Dhaka', 'Australia', 'Dhaka', 'Dhaka', '1216', '01933954158');
-            await expect(page.getByText('Account Created!')).toBeVisible();
-        })
-
         await test.step(" Verify that 'logged in user' is visible", async () => {
-            await authPage.continueButton.click();
             await expect(authPage.loggedInUser).toBeVisible();
         })
 
@@ -63,12 +54,6 @@ test.describe('Register Checkout Flow', () => {
             await homePage.clickOnElement(page.getByText("View Cart").first());
             await expect(allProductsPage.checkoutButton).toBeVisible();
         });
-
-        // await test.step('Verify Register while checkout', async () => {
-        //     await homePage.clickOnElement(allProductsPage.checkoutButton);
-        //     await homePage.clickOnElement(allProductsPage.registerWhileCheckoutBtn);
-        // });
-
 
         await test.step(" Verify Address Details and Review Your Order", async () => {
             await homePage.clickOnElement(homePage.CartButton);
@@ -93,13 +78,6 @@ test.describe('Register Checkout Flow', () => {
 
         await test.step(" Verify success message 'Your order has been placed successfully!'", async () => {
             await expect(page.getByText('Order Placed!')).toBeVisible();
-        })
-
-        await test.step(" Verify that Account was successfully deleted", async () => {
-            await authPage.continueButton.click();
-            await homePage.hoverOnElement(authPage.userDeleteBtn)
-            await homePage.clickOnElement(authPage.userDeleteBtn);
-            await expect(page.getByText('Account Deleted!')).toBeVisible();
         })
     });
 
