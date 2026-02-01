@@ -33,6 +33,7 @@ test.describe('Register Checkout Flow', () => {
             await allProductsPage.products.nth(2).hover();
             await homePage.clickOnElement(allProductsPage.ViewProduct2);
             await expect(page.getByText("Add to cart").first()).toBeVisible();
+
             await allProductsPage.clickAddToCart();
         });
 

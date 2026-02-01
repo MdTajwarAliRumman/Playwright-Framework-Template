@@ -24,6 +24,10 @@ export class AllProductsPage {
     readonly productQuantityInCart: Locator;
     readonly textAreaMessage: Locator;
     readonly placeOrderButton: Locator;
+    readonly womenCategory: Locator;
+    readonly womanCategoryItem: Locator;
+    readonly manCategory: Locator;
+    readonly manCategoryItem: Locator;
 
     constructor(page: Page) {
         this.page = page
@@ -56,6 +60,11 @@ export class AllProductsPage {
 
         this.textAreaMessage = page.locator("//textarea[@name='message']");
         this.placeOrderButton = page.locator("//a[normalize-space()='Place Order']");
+
+        this.womenCategory = page.locator("//a[normalize-space()='Women']");
+        this.womanCategoryItem = page.locator("//div[@id='Women']//a[contains(text(),'Dress')]");
+        this.manCategory = page.locator("//a[normalize-space()='Men']");
+        this.manCategoryItem = page.locator("//a[normalize-space()='Tshirts']");
 
 
     }
