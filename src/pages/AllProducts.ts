@@ -18,6 +18,7 @@ export class AllProductsPage {
     readonly searchBox: Locator;
     readonly searchButton: Locator;
     readonly AddToCart: Locator;
+    readonly removeFromCart: Locator;
     readonly products: Locator;
     readonly checkoutButton: Locator;
     readonly productQuantityInCart: Locator;
@@ -43,6 +44,7 @@ export class AllProductsPage {
         this.searchButton = page.locator("//button[@id='submit_search']")
 
         this.AddToCart = page.getByText("Add to cart")
+        this.removeFromCart = page.locator("//a[@class='cart_quantity_delete']")
 
         this.products = page.locator('.product-image-wrapper');
 

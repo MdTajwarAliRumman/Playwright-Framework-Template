@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "chromium",
         "name": "chromium",
@@ -60,18 +60,58 @@
   },
   "suites": [
     {
-      "title": "04_Products_Module\\TC14_PlaceOrder_Login_Before_Checkout_test.spec.ts",
-      "file": "04_Products_Module/TC14_PlaceOrder_Login_Before_Checkout_test.spec.ts",
+      "title": "04_Products_Module\\TC15_Remove_Products_From_Cart_test.spec.ts",
+      "file": "04_Products_Module/TC15_Remove_Products_From_Cart_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Register Checkout Flow",
-          "file": "04_Products_Module/TC14_PlaceOrder_Login_Before_Checkout_test.spec.ts",
+          "file": "04_Products_Module/TC15_Remove_Products_From_Cart_test.spec.ts",
           "line": 9,
           "column": 6,
           "specs": [
+            {
+              "title": "Verify that home page is visible successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6193,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-01T10:15:37.258Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC15_Re-63597-age-is-visible-successfully-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ae77d80be8588e4e97e0-0985c1ff2424642b2ffd",
+              "file": "04_Products_Module/TC15_Remove_Products_From_Cart_test.spec.ts",
+              "line": 27,
+              "column": 9
+            },
             {
               "title": "Verify Register while checkout",
               "ok": true,
@@ -85,55 +125,35 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 13844,
+                      "duration": 8554,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "Verify that \"ENTER ACCOUNT INFORMATION\" is visible",
-                          "duration": 1385
-                        },
-                        {
-                          "title": " Verify that 'logged in user' is visible",
-                          "duration": 84
-                        },
-                        {
                           "title": "Open product and add to cart",
-                          "duration": 795
+                          "duration": 1032
                         },
                         {
                           "title": "Verify cart page is displayed",
-                          "duration": 1354
+                          "duration": 832
                         },
                         {
-                          "title": " Verify Address Details and Review Your Order",
-                          "duration": 865
-                        },
-                        {
-                          "title": " Verify Filling up the message area and then placing order",
-                          "duration": 1979
-                        },
-                        {
-                          "title": " Verify Payment details are being stored",
-                          "duration": 1791
-                        },
-                        {
-                          "title": " Verify success message 'Your order has been placed successfully!'",
-                          "duration": 81
+                          "title": " Verify that product is removed from the cart",
+                          "duration": 434
                         }
                       ],
-                      "startTime": "2026-02-01T09:41:12.022Z",
+                      "startTime": "2026-02-01T10:15:37.268Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC14_Pl-a0e89-ify-Register-while-checkout-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC15_Re-e9b0e-ify-Register-while-checkout-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -141,8 +161,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "8cd05e1d0e52881f4517-ae02e3c213fb5e5af24a",
-              "file": "04_Products_Module/TC14_PlaceOrder_Login_Before_Checkout_test.spec.ts",
+              "id": "ae77d80be8588e4e97e0-d035bb6b2ddfae458da4",
+              "file": "04_Products_Module/TC15_Remove_Products_From_Cart_test.spec.ts",
               "line": 33,
               "column": 9
             }
@@ -153,9 +173,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-01T09:41:10.131Z",
-    "duration": 16575.60799999998,
-    "expected": 1,
+    "startTime": "2026-02-01T10:15:35.297Z",
+    "duration": 11325.149000000209,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
