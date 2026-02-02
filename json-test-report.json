@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -60,138 +60,18 @@
   },
   "suites": [
     {
-      "title": "04_Products_Module\\TC19_Adding_Review_test.spec.ts",
-      "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
+      "title": "04_Products_Module\\TC20_Recommended_Items_Add_test.spec.ts",
+      "file": "04_Products_Module/TC20_Recommended_Items_Add_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Product Review Flow",
-          "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
+          "file": "04_Products_Module/TC20_Recommended_Items_Add_test.spec.ts",
           "line": 8,
           "column": 6,
           "specs": [
-            {
-              "title": "Verify that home page is visible successfully",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 52,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 10303,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-02T05:47:01.367Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC19_Ad-4a5d7-age-is-visible-successfully-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a7bf558613acda616240-85bc17a3b9811b522795",
-              "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
-              "line": 23,
-              "column": 9
-            },
-            {
-              "title": "Verify user is navigated to ALL PRODUCTS page successfully",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 53,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 9761,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-02T05:47:01.444Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC19_Ad-90d04--PRODUCTS-page-successfully-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a7bf558613acda616240-17f2c071b1f431a3b32b",
-              "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
-              "line": 27,
-              "column": 9
-            },
-            {
-              "title": "Verify all the products related to search are visible",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 54,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 11060,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-02T05:47:01.377Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC19_Ad-4a0e0-lated-to-search-are-visible-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a7bf558613acda616240-2e4c0f0aa98744077352",
-              "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
-              "line": 31,
-              "column": 9
-            },
             {
               "title": " Verify success message \"Thank you for your review.\"",
               "ok": true,
@@ -205,31 +85,31 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 55,
-                      "parallelIndex": 3,
+                      "workerIndex": 60,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 11206,
+                      "duration": 7110,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "Verify that \"Write Your Review\" is visible",
-                          "duration": 1590
+                          "title": "Verify \"RECOMMENDED ITEMS\" are visible",
+                          "duration": 140
                         },
                         {
-                          "title": "Verify that \"Thank you for your review.\" is visible",
-                          "duration": 571
+                          "title": "Verify that product is displayed in cart page",
+                          "duration": 1222
                         }
                       ],
-                      "startTime": "2026-02-02T05:47:01.391Z",
+                      "startTime": "2026-02-02T06:02:02.215Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC19_Ad-e6311--Thank-you-for-your-review--chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC20_Re-88122--Thank-you-for-your-review--chromium\\trace.zip"
                         }
                       ]
                     }
@@ -237,9 +117,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "a7bf558613acda616240-651970c039f3088edbb1",
-              "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
-              "line": 37,
+              "id": "c533b2a9b5df0554bc6f-8903e4c2dbe37b87ea37",
+              "file": "04_Products_Module/TC20_Recommended_Items_Add_test.spec.ts",
+              "line": 33,
               "column": 9
             }
           ]
@@ -249,9 +129,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-02T05:46:59.259Z",
-    "duration": 14491.532999999821,
-    "expected": 4,
+    "startTime": "2026-02-02T06:02:00.321Z",
+    "duration": 9667.377000000328,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
