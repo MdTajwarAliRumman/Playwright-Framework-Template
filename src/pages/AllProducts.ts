@@ -28,6 +28,8 @@ export class AllProductsPage {
     readonly womanCategoryItem: Locator;
     readonly manCategory: Locator;
     readonly manCategoryItem: Locator;
+    readonly brand1: Locator;
+    readonly brand2: Locator;
 
     constructor(page: Page) {
         this.page = page
@@ -66,7 +68,8 @@ export class AllProductsPage {
         this.manCategory = page.locator("//a[normalize-space()='Men']");
         this.manCategoryItem = page.locator("//a[normalize-space()='Tshirts']");
 
-
+        this.brand1 = page.locator("//a[@href='/brand_products/Polo']");
+        this.brand2 = page.locator("//a[@href='/brand_products/H&M']");
     }
 
     // Methods
