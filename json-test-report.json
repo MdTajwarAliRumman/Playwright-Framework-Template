@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 5
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "chromium",
         "name": "chromium",
@@ -60,20 +60,182 @@
   },
   "suites": [
     {
-      "title": "05_Subscription_Module\\TC23_Scroll_UporDown_test.spec.ts",
-      "file": "05_Subscription_Module/TC23_Scroll_UporDown_test.spec.ts",
+      "title": "06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts",
+      "file": "06_Negative_Tests/TC24_Screenshots_on_negative_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Subscription Flow",
-          "file": "05_Subscription_Module/TC23_Scroll_UporDown_test.spec.ts",
-          "line": 6,
+          "title": "Signup Flow",
+          "file": "06_Negative_Tests/TC24_Screenshots_on_negative_test.spec.ts",
+          "line": 8,
           "column": 6,
           "specs": [
             {
-              "title": "Verify that page is scrolled up and \"Full Fledged practice website for Automation Engineers\" text is visible on screen",
+              "title": "Verify \"New User Signup!\" is visible",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 50,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 17746,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Testing New User Signup!')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Testing New User Signup!')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Testing New User Signup!')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Testing New User Signup!')\u001b[22m\n\n    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts:34:66)\n    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:15)\n    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\testInfo.js:320:17)\n    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:321:22)",
+                        "location": {
+                          "file": "Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts",
+                          "column": 66,
+                          "line": 34
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts",
+                            "column": 66,
+                            "line": 34
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Testing New User Signup!')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Testing New User Signup!')\u001b[22m\n\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts:34:66)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:15)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\testInfo.js:320:17)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:321:22)\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts",
+                            "column": 13,
+                            "line": 25
+                          },
+                          "message": "Error: ENOENT: no such file or directory, open 'C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\screenshots\\Verify \"New User Signup!\" is visible.png'\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts:25:13)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\testInfo.js:320:11)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:479:11)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:340:11)\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-02T10:05:05.484Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\06_Negative_Tests-TC24_Scr-4519f--New-User-Signup-is-visible-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\06_Negative_Tests-TC24_Scr-4519f--New-User-Signup-is-visible-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\06_Negative_Tests-TC24_Scr-4519f--New-User-Signup-is-visible-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts",
+                        "column": 66,
+                        "line": 34
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b3e75475840ad271936d-3027d01295d25d68f80f",
+              "file": "06_Negative_Tests/TC24_Screenshots_on_negative_test.spec.ts",
+              "line": 33,
+              "column": 9
+            },
+            {
+              "title": "Verify that \"ENTER ACCOUNT INFORMATION\" is visible",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 51,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 18984,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Invalid text to test Screenshot!')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Invalid text to test Screenshot!')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Invalid text to test Screenshot!')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Invalid text to test Screenshot!')\u001b[22m\n\n    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts:39:74)\n    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:9)\n    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\testInfo.js:320:11)\n    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:321:7)",
+                        "location": {
+                          "file": "Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts",
+                          "column": 74,
+                          "line": 39
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts",
+                            "column": 74,
+                            "line": 39
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Invalid text to test Screenshot!')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Invalid text to test Screenshot!')\u001b[22m\n\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts:39:74)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:323:9)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\testInfo.js:320:11)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:321:7)\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts",
+                            "column": 13,
+                            "line": 25
+                          },
+                          "message": "Error: ENOENT: no such file or directory, open 'C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\screenshots\\Verify that \"ENTER ACCOUNT INFORMATION\" is visible.png'\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts:25:13)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\testInfo.js:320:11)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:479:11)\u001b[22m\n\u001b[2m    at C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\node_modules\\playwright\\lib\\worker\\workerMain.js:340:11)\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-02T10:05:05.553Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\06_Negative_Tests-TC24_Scr-63150-OUNT-INFORMATION-is-visible-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\06_Negative_Tests-TC24_Scr-63150-OUNT-INFORMATION-is-visible-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\06_Negative_Tests-TC24_Scr-63150-OUNT-INFORMATION-is-visible-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\tests\\06_Negative_Tests\\TC24_Screenshots_on_negative_test.spec.ts",
+                        "column": 74,
+                        "line": 39
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b3e75475840ad271936d-6cddf5ce3ac164de1d39",
+              "file": "06_Negative_Tests/TC24_Screenshots_on_negative_test.spec.ts",
+              "line": 37,
+              "column": 9
+            },
+            {
+              "title": " Verify that 'ACCOUNT CREATED!' is visible",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,21 +247,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 66,
-                      "parallelIndex": 0,
+                      "workerIndex": 52,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 5871,
+                      "duration": 17266,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-02T06:47:33.338Z",
+                      "startTime": "2026-02-02T10:05:05.511Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\05_Subscription_Module-TC2-04eaa-s-text-is-visible-on-screen-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\06_Negative_Tests-TC24_Scr-4bf28--ACCOUNT-CREATED-is-visible-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -107,9 +269,89 @@
                   "status": "expected"
                 }
               ],
-              "id": "4a366aac63a9c5dfa839-7b644dca562aa8c0391e",
-              "file": "05_Subscription_Module/TC23_Scroll_UporDown_test.spec.ts",
-              "line": 25,
+              "id": "b3e75475840ad271936d-05dff128882cba77088c",
+              "file": "06_Negative_Tests/TC24_Screenshots_on_negative_test.spec.ts",
+              "line": 42,
+              "column": 9
+            },
+            {
+              "title": " Verify that 'logged in user' is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 53,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 18015,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-02T10:05:05.605Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\06_Negative_Tests-TC24_Scr-8a3dc-t-logged-in-user-is-visible-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b3e75475840ad271936d-6f60638737b46fe7ee27",
+              "file": "06_Negative_Tests/TC24_Screenshots_on_negative_test.spec.ts",
+              "line": 48,
+              "column": 9
+            },
+            {
+              "title": " Verify that 'ACCOUNT DELETED!' is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 54,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 19744,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-02T10:05:05.503Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\06_Negative_Tests-TC24_Scr-4781e--ACCOUNT-DELETED-is-visible-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b3e75475840ad271936d-fe9c5994e65b79da6982",
+              "file": "06_Negative_Tests/TC24_Screenshots_on_negative_test.spec.ts",
+              "line": 56,
               "column": 9
             }
           ]
@@ -119,11 +361,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-02T06:47:31.283Z",
-    "duration": 8546.123000001535,
-    "expected": 1,
+    "startTime": "2026-02-02T10:05:03.217Z",
+    "duration": 23093.6669999999,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }

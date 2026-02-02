@@ -25,6 +25,15 @@ test.describe('Register Checkout Flow', () => {
         // await homePage.clickOnElement(homePage.ProductsButton);
     });
 
+    test.afterEach(async ({ page }, testInfo) => {
+        if (testInfo.status !== testInfo.expectedStatus) {
+            await page.screenshot({
+                path: `screenshots/${testInfo.title}.png`,
+                fullPage: true
+            });
+        }
+    });
+
 
     test('Verify that home page is visible successfully', async ({ page }) => {
         await expect(page).toHaveTitle('Automation Exercise');
