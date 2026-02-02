@@ -26,12 +26,12 @@ test.describe('Register Checkout Flow', () => {
 
 
     test('Verify navigating to brand page and brand products are displayed', async ({ page }) => {
-        test.step('Verify that Specific brand page and brand products are displayed', async () => {
+        await test.step('Verify that Specific brand page and brand products are displayed', async () => {
             await homePage.clickOnElement(allProductsPage.brand1);
             await expect(page.getByText('Brand - ')).toBeVisible();
         })
 
-        test.step('Verify that another brand page and brand products are displayed', async () => {
+        await test.step('Verify that another brand page and brand products are displayed', async () => {
             await homePage.clickOnElement(allProductsPage.brand2);
             await expect(page.getByText('Brand - ')).toBeVisible();
         })

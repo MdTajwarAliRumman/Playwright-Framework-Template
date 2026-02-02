@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 5
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "chromium",
         "name": "chromium",
@@ -60,20 +60,20 @@
   },
   "suites": [
     {
-      "title": "04_Products_Module\\TC17_View_Barnd_Products_test.spec.ts",
-      "file": "04_Products_Module/TC17_View_Barnd_Products_test.spec.ts",
+      "title": "04_Products_Module\\TC18_Search_Products_Verify_login_test.spec.ts",
+      "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Register Checkout Flow",
-          "file": "04_Products_Module/TC17_View_Barnd_Products_test.spec.ts",
+          "title": "All Products Flow",
+          "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
           "line": 8,
           "column": 6,
           "specs": [
             {
-              "title": "Verify navigating to brand page and brand products are displayed",
+              "title": "Verify that home page is visible successfully",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,31 +85,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 44,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6438,
+                      "duration": 13196,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Verify that Specific brand page and brand products are displayed",
-                          "duration": 508
-                        },
-                        {
-                          "title": "Verify that another brand page and brand products are displayed",
-                          "duration": 504
-                        }
-                      ],
-                      "startTime": "2026-02-02T04:17:22.971Z",
+                      "startTime": "2026-02-02T05:28:43.767Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC17_Vi-6df27-rand-products-are-displayed-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC18_Se-532f9-age-is-visible-successfully-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -117,9 +107,183 @@
                   "status": "expected"
                 }
               ],
-              "id": "19e58ae733c52f47737d-224c739dd8ddd64dc21a",
-              "file": "04_Products_Module/TC17_View_Barnd_Products_test.spec.ts",
-              "line": 28,
+              "id": "e56909df92d8a15a0ba1-7c63bf430cb1b4b12d7b",
+              "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
+              "line": 23,
+              "column": 9
+            },
+            {
+              "title": "Verify user is navigated to ALL PRODUCTS page successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 45,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 14179,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-02T05:28:43.725Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC18_Se-41a0b--PRODUCTS-page-successfully-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e56909df92d8a15a0ba1-dbf896f10a0a154b0f15",
+              "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "Verify \"SEARCHED PRODUCTS\" is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 46,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 13870,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-02T05:28:43.685Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC18_Se-652e6-EARCHED-PRODUCTS-is-visible-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e56909df92d8a15a0ba1-aa271c58e8c31527bbd7",
+              "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
+              "line": 31,
+              "column": 9
+            },
+            {
+              "title": "Verify all the products related to search are visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 47,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 14130,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-02T05:28:43.680Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC18_Se-916ce-lated-to-search-are-visible-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e56909df92d8a15a0ba1-5c28662b060e2c8fcfb5",
+              "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
+              "line": 37,
+              "column": 9
+            },
+            {
+              "title": "Search Products and Verify Cart After Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 48,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 15602,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify that products are visible in cart",
+                          "duration": 4221
+                        },
+                        {
+                          "title": "Verify User is able to login while checkout",
+                          "duration": 2009
+                        },
+                        {
+                          "title": "Verify that those products are visible in cart after login",
+                          "duration": 636
+                        }
+                      ],
+                      "startTime": "2026-02-02T05:28:43.705Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC18_Se-1a3aa-and-Verify-Cart-After-Login-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e56909df92d8a15a0ba1-ce62f471b6a1dfb95e51",
+              "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
+              "line": 43,
               "column": 9
             }
           ]
@@ -129,9 +293,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-02T04:17:21.088Z",
-    "duration": 9031.824000000022,
-    "expected": 1,
+    "startTime": "2026-02-02T05:28:41.422Z",
+    "duration": 19050.143000000156,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
