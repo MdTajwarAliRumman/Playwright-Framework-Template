@@ -30,6 +30,7 @@ export class AllProductsPage {
     readonly manCategoryItem: Locator;
     readonly brand1: Locator;
     readonly brand2: Locator;
+    readonly downloadInvoice: Locator;
 
     constructor(page: Page) {
         this.page = page
@@ -70,6 +71,8 @@ export class AllProductsPage {
 
         this.brand1 = page.locator("//a[@href='/brand_products/Polo']");
         this.brand2 = page.locator("//a[@href='/brand_products/H&M']");
+
+        this.downloadInvoice = page.locator("//a[normalize-space()='Download Invoice']");
     }
 
     // Methods
