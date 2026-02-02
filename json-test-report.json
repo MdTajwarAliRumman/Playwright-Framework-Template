@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 5
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 5
+          "actualWorkers": 4
         },
         "id": "chromium",
         "name": "chromium",
@@ -60,15 +60,15 @@
   },
   "suites": [
     {
-      "title": "04_Products_Module\\TC18_Search_Products_Verify_login_test.spec.ts",
-      "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
+      "title": "04_Products_Module\\TC19_Adding_Review_test.spec.ts",
+      "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "All Products Flow",
-          "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
+          "title": "Product Review Flow",
+          "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
           "line": 8,
           "column": 6,
           "specs": [
@@ -85,21 +85,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 44,
+                      "workerIndex": 52,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 13196,
+                      "duration": 10303,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-02T05:28:43.767Z",
+                      "startTime": "2026-02-02T05:47:01.367Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC18_Se-532f9-age-is-visible-successfully-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC19_Ad-4a5d7-age-is-visible-successfully-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -107,8 +107,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "e56909df92d8a15a0ba1-7c63bf430cb1b4b12d7b",
-              "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
+              "id": "a7bf558613acda616240-85bc17a3b9811b522795",
+              "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
               "line": 23,
               "column": 9
             },
@@ -125,21 +125,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 45,
+                      "workerIndex": 53,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 14179,
+                      "duration": 9761,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-02T05:28:43.725Z",
+                      "startTime": "2026-02-02T05:47:01.444Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC18_Se-41a0b--PRODUCTS-page-successfully-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC19_Ad-90d04--PRODUCTS-page-successfully-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -147,49 +147,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "e56909df92d8a15a0ba1-dbf896f10a0a154b0f15",
-              "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
+              "id": "a7bf558613acda616240-17f2c071b1f431a3b32b",
+              "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
               "line": 27,
-              "column": 9
-            },
-            {
-              "title": "Verify \"SEARCHED PRODUCTS\" is visible",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 46,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 13870,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-02T05:28:43.685Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC18_Se-652e6-EARCHED-PRODUCTS-is-visible-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "e56909df92d8a15a0ba1-aa271c58e8c31527bbd7",
-              "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
-              "line": 31,
               "column": 9
             },
             {
@@ -205,21 +165,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 47,
-                      "parallelIndex": 3,
+                      "workerIndex": 54,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 14130,
+                      "duration": 11060,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-02T05:28:43.680Z",
+                      "startTime": "2026-02-02T05:47:01.377Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC18_Se-916ce-lated-to-search-are-visible-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC19_Ad-4a0e0-lated-to-search-are-visible-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -227,13 +187,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "e56909df92d8a15a0ba1-5c28662b060e2c8fcfb5",
-              "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
-              "line": 37,
+              "id": "a7bf558613acda616240-2e4c0f0aa98744077352",
+              "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
+              "line": 31,
               "column": 9
             },
             {
-              "title": "Search Products and Verify Cart After Login",
+              "title": " Verify success message \"Thank you for your review.\"",
               "ok": true,
               "tags": [],
               "tests": [
@@ -245,35 +205,31 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 48,
-                      "parallelIndex": 4,
+                      "workerIndex": 55,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 15602,
+                      "duration": 11206,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "Verify that products are visible in cart",
-                          "duration": 4221
+                          "title": "Verify that \"Write Your Review\" is visible",
+                          "duration": 1590
                         },
                         {
-                          "title": "Verify User is able to login while checkout",
-                          "duration": 2009
-                        },
-                        {
-                          "title": "Verify that those products are visible in cart after login",
-                          "duration": 636
+                          "title": "Verify that \"Thank you for your review.\" is visible",
+                          "duration": 571
                         }
                       ],
-                      "startTime": "2026-02-02T05:28:43.705Z",
+                      "startTime": "2026-02-02T05:47:01.391Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC18_Se-1a3aa-and-Verify-Cart-After-Login-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC19_Ad-e6311--Thank-you-for-your-review--chromium\\trace.zip"
                         }
                       ]
                     }
@@ -281,9 +237,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "e56909df92d8a15a0ba1-ce62f471b6a1dfb95e51",
-              "file": "04_Products_Module/TC18_Search_Products_Verify_login_test.spec.ts",
-              "line": 43,
+              "id": "a7bf558613acda616240-651970c039f3088edbb1",
+              "file": "04_Products_Module/TC19_Adding_Review_test.spec.ts",
+              "line": 37,
               "column": 9
             }
           ]
@@ -293,9 +249,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-02T05:28:41.422Z",
-    "duration": 19050.143000000156,
-    "expected": 5,
+    "startTime": "2026-02-02T05:46:59.259Z",
+    "duration": 14491.532999999821,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

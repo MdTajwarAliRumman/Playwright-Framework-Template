@@ -39,6 +39,11 @@ export class AuthPage {
     readonly userDeleteBtn: Locator;
     readonly logoutButton: Locator;
 
+    readonly reviewName: Locator;
+    readonly reviewEmail: Locator;
+    readonly reviewMessage: Locator;
+    readonly reviewButton: Locator;
+
     constructor(page: Page) {
         this.page = page
 
@@ -77,6 +82,11 @@ export class AuthPage {
         this.userDeleteBtn = page.locator("//a[normalize-space()='Delete Account']")
 
         this.logoutButton = page.locator("//a[normalize-space()='Logout']")
+
+        this.reviewName = page.locator("//input[@id='name']")
+        this.reviewEmail = page.locator("//input[@id='email']")
+        this.reviewMessage = page.locator("//textarea[@id='review']")
+        this.reviewButton = page.locator("//button[@id='button-review']")
     }
 
     // Methods
