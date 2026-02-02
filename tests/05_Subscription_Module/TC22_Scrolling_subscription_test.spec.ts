@@ -11,7 +11,7 @@ test.describe('Subscription Flow', () => {
 
         await homePage.goToURL();
         //Here I am scrolling the subscription field into view
-        await homePage.SubscriptionField.scrollIntoViewIfNeeded();
+        await homePage.scrollToElement(homePage.SubscriptionField);
     });
 
 

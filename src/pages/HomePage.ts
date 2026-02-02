@@ -12,6 +12,7 @@ export class HomePage {
     readonly CartButton: Locator;
     readonly DeleteAccountButton: Locator;
     readonly reommendedItems: Locator;
+    readonly scrollUpButton: Locator;
 
     constructor(page: Page) {
         this.page = page
@@ -26,6 +27,7 @@ export class HomePage {
         this.CartButton = page.locator("//a[normalize-space()='Cart']")
         this.DeleteAccountButton = page.locator("//a[normalize-space()='Delete Account']")
         this.reommendedItems = page.locator("//div[@class='item active']//div[1]//div[1]//div[1]//div[1]//a[1]")
+        this.scrollUpButton = page.locator("//a[@id='scrollUp']")
 
     }
 
@@ -47,6 +49,11 @@ export class HomePage {
     // this method is for hovering over any element
     async hoverOnElement(locator: Locator) {
         await locator.hover();
+    }
+
+    // Scroll until element is visible
+    async scrollToElement(locator: Locator) {
+        await locator.scrollIntoViewIfNeeded();
     }
 
 

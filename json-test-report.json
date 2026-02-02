@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -60,20 +60,20 @@
   },
   "suites": [
     {
-      "title": "04_Products_Module\\TC21_Download_Invoice_after_purchase_test.spec.ts",
-      "file": "04_Products_Module/TC21_Download_Invoice_after_purchase_test.spec.ts",
+      "title": "05_Subscription_Module\\TC23_Scroll_UporDown_test.spec.ts",
+      "file": "05_Subscription_Module/TC23_Scroll_UporDown_test.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Register Checkout Flow",
-          "file": "04_Products_Module/TC21_Download_Invoice_after_purchase_test.spec.ts",
-          "line": 9,
+          "title": "Subscription Flow",
+          "file": "05_Subscription_Module/TC23_Scroll_UporDown_test.spec.ts",
+          "line": 6,
           "column": 6,
           "specs": [
             {
-              "title": "Verify that home page is visible successfully",
+              "title": "Verify that page is scrolled up and \"Full Fledged practice website for Automation Engineers\" text is visible on screen",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,21 +85,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 61,
+                      "workerIndex": 66,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7043,
+                      "duration": 5871,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-02T06:25:20.274Z",
+                      "startTime": "2026-02-02T06:47:33.338Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC21_Do-1f857-age-is-visible-successfully-chromium\\trace.zip"
+                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\05_Subscription_Module-TC2-04eaa-s-text-is-visible-on-screen-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -107,95 +107,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "986193333bfa0d7c6184-5b7f55141c8f4976c3bc",
-              "file": "04_Products_Module/TC21_Download_Invoice_after_purchase_test.spec.ts",
-              "line": 29,
-              "column": 9
-            },
-            {
-              "title": "Verify Register while checkout",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 62,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 17683,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Verify that \"ENTER ACCOUNT INFORMATION\" is visible",
-                          "duration": 1140
-                        },
-                        {
-                          "title": " Verify that 'ACCOUNT CREATED!' is visible",
-                          "duration": 1648
-                        },
-                        {
-                          "title": " Verify that 'logged in user' is visible",
-                          "duration": 574
-                        },
-                        {
-                          "title": "Open product and add to cart",
-                          "duration": 667
-                        },
-                        {
-                          "title": "Verify cart page is displayed",
-                          "duration": 748
-                        },
-                        {
-                          "title": " Verify Address Details and Review Your Order",
-                          "duration": 1009
-                        },
-                        {
-                          "title": " Verify Filling up the message area and then placing order",
-                          "duration": 1378
-                        },
-                        {
-                          "title": " Verify Payment details are being stored",
-                          "duration": 1815
-                        },
-                        {
-                          "title": " Verify success message 'Your order has been placed successfully!'",
-                          "duration": 42
-                        },
-                        {
-                          "title": " Verify Invoice was downloaded successfully!",
-                          "duration": 402
-                        },
-                        {
-                          "title": " Verify that Account was successfully deleted",
-                          "duration": 1100
-                        }
-                      ],
-                      "startTime": "2026-02-02T06:25:20.274Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Tajwar (Day Shift)\\Desktop\\All Important docs\\Automation tests\\Playwright_Framework\\test-results\\04_Products_Module-TC21_Do-5a61d-ify-Register-while-checkout-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "986193333bfa0d7c6184-e898e1893782039ce424",
-              "file": "04_Products_Module/TC21_Download_Invoice_after_purchase_test.spec.ts",
-              "line": 35,
+              "id": "4a366aac63a9c5dfa839-7b644dca562aa8c0391e",
+              "file": "05_Subscription_Module/TC23_Scroll_UporDown_test.spec.ts",
+              "line": 25,
               "column": 9
             }
           ]
@@ -205,9 +119,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-02T06:25:18.267Z",
-    "duration": 20600.74400000088,
-    "expected": 2,
+    "startTime": "2026-02-02T06:47:31.283Z",
+    "duration": 8546.123000001535,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
